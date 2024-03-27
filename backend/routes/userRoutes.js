@@ -37,8 +37,8 @@ userRoute.post("/login",async(req,res)=>{
             if(check){
                 bcrypt.compare(password,check.password,async(err,same)=>{
                     if(same){
-                        let token=jwt.sign({email:email},"neo");
-                        res.status(200).send({msg:"user has been logged in",token});
+                        let token=jwt.sign({email:email,id:check._id},"neo");
+                        res.status(200).send({msg:"user has been logged in",check,token});
                     }else{
                         res.status(400).send({msg:"wrong password"});
                     }

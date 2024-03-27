@@ -2,13 +2,15 @@ const express=require("express");
 const cors=require("cors");
 const dotenv=require("dotenv");
 const db=require("./db");
-const userRoute = require("./routes/userRotes");
+const userRoute = require("./routes/userRoutes");
+const tasksRoute = require("./routes/tasksRoutes");
 
 
 const server=express();
 server.use(express.json());
 server.use(cors());
 server.use(userRoute);
+server.use("/tasks",tasksRoute);
 
 server.get("/",(req,res)=>{
 res.status(200).send({msg:"home"});
