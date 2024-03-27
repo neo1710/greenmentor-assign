@@ -2,37 +2,62 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav{
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.App-link {
-  color: #61dafb;
+.allLinks{
+  display: flex;
+width: 50%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link{
+ width: 23%;
 }
+.links{
+  color: rgb(66, 153, 225);
+  font-weight: bolder;
+  border-radius: 5px;
+  border: rgb(66, 153, 225) solid 1px;
+  padding: 4px;
+  width: 100%;
+}
+.menu{
+  display: none;
+}
+.menuBut{
+  display: none;
+}
+@media (min-width :280px) and (max-width: 780px) {
+  .allLinks{
+  display: none;
+  }
+  .menu{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 190px;
+    background-color: white;
+    flex-direction: column;
+    width: 40%;
+  }
+  .menuBut{
+    display: block;
+    color: rgb(66, 153, 225);
+    width: 20%;
+    font-weight: bolder;
+    border: rgb(66, 153, 225) solid 1px;
+  }
+  .link{
+    font-weight: bolder;
+    border:  rgb(66, 153, 225) solid 1px;
+    width: 80%;
+    color: rgb(66, 153, 225);
+  }
+  }

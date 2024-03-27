@@ -1,0 +1,14 @@
+p{
+    font-weight: bold;
+    color: red;
+}
+.get{
+    font-weight: bolder;
+   color: rgb(66, 153, 225);
+   width: 20%;
+   border: solid 1px rgb(66, 153, 225) ;
+}
+
+.get:hover{
+    background-color:whitesmoke;
+}
