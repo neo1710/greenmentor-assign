@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Login.css"
 import axios from "axios";
-
+import {useNavigate} from "react-router-dom";
 
 export const Register=()=>{
     const [name,setName]=useState("");
@@ -9,6 +9,7 @@ export const Register=()=>{
     const [pass,setPass]=useState("");
     const [success,setSuccess]=useState(false);
     const [load,setLoad]=useState(false);
+    let navigate=useNavigate()
   function signin(e){
       e.preventDefault();
   let data={email,password:pass,name};
@@ -17,6 +18,7 @@ export const Register=()=>{
   console.log(res);
 setSuccess(true);
 setLoad(false);
+navigate("/login");
     }).catch((err)=>{
       console.log(err);
     })  
@@ -24,6 +26,7 @@ setLoad(false);
     return(
         <div>
             <div style={{display:!success?"":"none"}} className="loginForm">
+            <h1 className="text-2xl font-bold text-blue-500">Register here</h1> <br />
              <input className="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-500"
                  type="text" placeholder="Name" value={name}
                  onChange={(e)=>{setName(e.target.value)}}/> <br />
