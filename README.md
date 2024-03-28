@@ -7,7 +7,7 @@ This is a task management website where you can manage and track your task
 Frontend | Backend | Fullstack
 
 ## Deplolyed App
-Frontend: https://frontent-nqpqx5lg2-neo1710s-projects.vercel.app/
+Frontend:https://frontent-qogkuai31-neo1710s-projects.vercel.app
 Backend: https://glorious-twill-moth.cyclic.app/
 
 ## Directory Structure
