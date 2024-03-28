@@ -18,7 +18,7 @@ async function addTask(){
 let data={task,description:desc,priority,status};
 setLoad(true)
 if(req==="post"){
-axios.post(`https://glorious-twill-moth.cyclic.app/tasks/${to}`,data,{
+axios.post(`https://cautious-bear-bracelet.cyclic.app/tasks/${to}`,data,{
   headers:{
     Authorization:`Bearer ${userData.token}`  
   }
@@ -39,7 +39,7 @@ setStatus("");
 console.log(error)
 })
 }else{
-  axios.patch(`https://glorious-twill-moth.cyclic.app/tasks/${to}`,data,{
+  axios.patch(`https://cautious-bear-bracelet.cyclic.app/tasks/${to}`,data,{
   headers:{
     Authorization:`Bearer ${userData.token}`  
   }

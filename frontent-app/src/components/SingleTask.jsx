@@ -23,7 +23,7 @@ export const SingleTask=({task,description,priority,status,_id})=>{
     }
 
     function deleteTask(){
-      axios.delete(`https://glorious-twill-moth.cyclic.app/tasks/${_id}`,{
+      axios.delete(`https://cautious-bear-bracelet.cyclic.app/tasks/${_id}`,{
         headers:{
             Authorization:`Bearer ${userData.token}`
         }

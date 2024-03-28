@@ -13,7 +13,7 @@ export const Register=()=>{
       e.preventDefault();
   let data={email,password:pass,name};
   setLoad(true);
-    axios.post(`https://glorious-twill-moth.cyclic.app/register`,data).then((res)=>{
+    axios.post(`https://cautious-bear-bracelet.cyclic.app/register`,data).then((res)=>{
   console.log(res);
 setSuccess(true);
 setLoad(false);
