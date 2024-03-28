@@ -1,42 +1,31 @@
 
 
 const initialState={
-token:"",
-userId:"",
-userName:"",
-isError:false,
-isAuth:false,
+tasks:[],
 isLoading:false,
+isError:false
 }
 
 export const reducer = (state=initialState,{type,payload})=>{
     switch(type){
-        case 'LOGIN_SUCCESS':{
+        case 'GET_SUCCESS':{
             return {
                 ...state,
-                isAuth:true,
-                token:payload.token,
-                userId:payload.check._id,
-                userName:payload.check.name,
+               tasks:payload.tasks,
                 isLoading:false
             }
         }
-        case 'LOGIN_FAILED':{
+        case 'GET_FAILED':{
             return {
                 ...state,
                 isError:true,
                 isLoading:false
             }
         }
-            case 'LOGIN_REQUEST':{
+            case 'GET_REQUEST':{
                 return {
                     ...state,
                     isLoading:true
-                }
-            }
-            case 'LOGOUT_SUCCESS':{
-                return {
-                    ...initialState
                 }
             }
 

@@ -17,10 +17,10 @@ export const Home=()=>{
                  <p>
                     You can create tasks that you want to do and manage them. <br />
                     You can manage status of the task and you can also give priority to it.
-                    And you can do it all on this single website  
+                    And you can do it all on this TrackTask.  
                  </p>
                 </div><br />
-                <Link to={"/login"}>  <button className="get">Get Started</button></Link>
+                <Link to={"/dashboard"}>  <button className="get">Get Started</button></Link>
          
         </div>
     )

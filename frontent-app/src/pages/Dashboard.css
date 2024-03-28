@@ -1,0 +1,49 @@
+.mainDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.addTask{
+    width: 100%;
+}
+.addTask>input{
+    width: 70%;
+}
+.addTask>select{
+    width: 70%;
+    margin: auto;
+}
+
+.addTask>textarea{
+    width: 70%;
+    margin: auto;
+}
+
+.allTasks{
+    width: 50%;
+}
+
+#red{
+border: red 2px solid;
+}
+
+#yellow{
+    border: yellow 2px solid;
+}
+#lightgreen{
+    border: green 2px solid;
+}
+
+
+.edit{
+    position: absolute;
+    width: 40%;
+    background-color:white;
+    color:black;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
