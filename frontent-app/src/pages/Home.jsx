@@ -1,13 +1,15 @@
 import axios from "axios"
 import "./Home.css"
 import { Navigate,Link } from "react-router-dom"
-
+import { useEffect, useState } from "react"
+import img1 from "../images/Screenshot (187).png"
+import img2 from "../images/Screenshot (188).png"
 
 export const Home=()=>{
-   
-    function done(){
-    
-    }
+let images=[img1,img2];  
+  
+
+
     return(
         <div>
          
@@ -20,6 +22,10 @@ export const Home=()=>{
                     And you can do it all on this TrackTask.  
                  </p>
                 </div><br />
+
+                <div className="slide" style={{width:"70%",margin:"auto"}}>
+                    <img src={images[0]} alt="err" />
+                </div> <br />
                 <Link to={"/dashboard"}>  <button className="get">Get Started</button></Link>
          
         </div>

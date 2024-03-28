@@ -60,7 +60,7 @@ export const Login=()=>{
             </div>
             
 
-            <div style={{display:userData.isAuth?"":"none", marginTop:"100px"}} className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+            <div style={{display:userData.isAuth?"":"none", marginTop:"200px", marginBottom:"200px"}} className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
   <strong className="font-bold">Success!</strong>
   <span className="block sm:inline">Login successfull.</span>
 </div>

@@ -38,7 +38,7 @@ setLoad(false);
                  {load?"Loading...":"SignIn"}
                 </button> <br />
             </div>
-            <div style={{display:success?"":"none",marginTop:"100px"}} className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+            <div style={{display:success?"":"none",marginTop:"200px", marginBottom:"200px"}} className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
   <strong className="font-bold">Success!</strong>
   <span className="block sm:inline">Your account has been successfully registered.</span>
 </div>

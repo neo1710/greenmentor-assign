@@ -21,7 +21,7 @@ console.log(data,userData);
 
     return(
         <div>
-            <h3 style={{display:userData.isAuth?"none":"",marginTop:"100px"}}><h3 class="text-xl font-bold mb-2"> 
+            <h3 style={{display:userData.isAuth?"none":"",marginTop:"100px", marginBottom:"350px"}}><h3 class="text-xl font-bold mb-2"> 
   <a href="/login" className="text-blue-500 hover:underline">Login</a> to get started
 </h3></h3>
 
