@@ -8,7 +8,7 @@ Frontend | Backend | Fullstack
 
 ## Deplolyed App
 Frontend:https://frontent-qogkuai31-neo1710s-projects.vercel.app
-Backend: https://glorious-twill-moth.cyclic.app/
+Backend: https://cautious-bear-bracelet.cyclic.app/
 
 ## Directory Structure
 greenmentor-assign/
