@@ -3,6 +3,11 @@
 ## Introduction
 This is a task management website where you can manage and track your task
 
+## Preview
+![Screenshot (187)](https://github.com/neo1710/greenmentor-assign/assets/115460455/1a9e701f-05b1-4c75-a7ad-8c250377ae77)
+![Screenshot (188)](https://github.com/neo1710/greenmentor-assign/assets/115460455/9d82b626-52c5-473d-aa07-dcd09ab7ee1b)
+
+
 ## Project Type
 Frontend | Backend | Fullstack
 
