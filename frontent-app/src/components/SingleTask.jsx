@@ -23,7 +23,7 @@ export const SingleTask=({task,description,priority,status,_id})=>{
     }
 
     function deleteTask(){
-      axios.delete(`https://cautious-bear-bracelet.cyclic.app/tasks/${_id}`,{
+      axios.delete(`https://greenmentor-backend-r9jd.onrender.com/tasks/${_id}`,{
         headers:{
             Authorization:`Bearer ${userData.token}`
         }
